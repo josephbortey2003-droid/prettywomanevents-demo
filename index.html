@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Pretty Woman Events &amp; Rentals | Event décor, tablescapes &amp; party rentals in Accra</title>
+<meta name="description" content="Pretty Woman Events & Rentals, Shamo Kwei Avenue, Accra. Styled tablescapes, canopies, draping, chairs, glassware, chargers and centrepieces for weddings, birthdays and life celebrations. Build your table and get a quote on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;600;700&display=swap">
+<style>
+/* Pretty Woman — brand from THEIR work: terracotta napkins, blush drapes, coral/peach florals, gold glassware,
+   walnut cross-back chairs, garden lawns; storefront in black with orange + white balloons.
+   Unique style: stylist's LOOKBOOK / mood board — pinned prints on linen, colour swatch chips per look, and an
+   interactive "Build your table" rental list that goes to WhatsApp. Petrona + Karla (never used before).
+   Buttons: rectangular with a stitched inner border (linen/tailoring). No pills. Light only. */
+:root {
+  --linen: #f8f1ea; --paper: #fffaf5; --cocoa: #2d1f19; --mute: #5e4c43; --terra: #b9471f; --terra-d: #93361a;
+  --blush: #f1d2c7; --peach: #f0a06a; --sage: #66804f; --walnut: #84552f; --line: #e6d6c8;
+  --serif: "Petrona", Georgia, serif; --sans: "Karla", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { overflow-x: clip; }
+body {
+  margin: 0; color: var(--cocoa); font: 400 18px/1.7 var(--sans);
+  /* woven linen texture */
+  background: var(--linen) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 0h6v1H0zM0 0h1v6H0z' fill='%23b9471f' fill-opacity='.035'/%3E%3C/svg%3E");
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--terra); outline-offset: 3px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; margin: 0; letter-spacing: -.01em; line-height: 1.05; }
+em { font-style: italic; font-weight: 500; color: var(--terra); }
+.demo { background: var(--cocoa); color: #ecdcd2; font-size: 13px; text-align: center; padding: 7px 12px; }
+
+/* stitched buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; position: relative; font: 700 16px/1 var(--sans); padding: 18px 26px; background: var(--terra); color: #fff; text-decoration: none; border: 0; cursor: pointer; transition: background .2s; }
+.btn::after { content: ""; position: absolute; inset: 4px; border: 1px dashed rgba(255,255,255,.55); pointer-events: none; }
+.btn:hover { background: var(--terra-d); }
+.btn.soft { background: var(--blush); color: var(--cocoa); }
+.btn.soft::after { border-color: rgba(45,31,25,.35); }
+.btn.soft:hover { background: #ebc2b4; }
+.btn.small { padding: 13px 16px; font-size: 14.5px; }
+
+header.top { position: sticky; top: 0; z-index: 40; background: rgba(255,250,245,.97); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { text-decoration: none; line-height: 1; }
+.brand b { display: block; font: italic 500 30px/1 var(--serif); color: var(--cocoa); }
+.brand small { display: block; font: 700 11px/1 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--terra); margin-top: 5px; }
+.top nav { display: flex; align-items: center; gap: 26px; font: 600 16px/1 var(--sans); }
+.top nav a { text-decoration: none; }
+.top nav a:not(.btn):hover { color: var(--terra); }
+.top nav a.btn { color: #fff; }
+.menu-btn { display: none; background: var(--paper); border: 1.5px solid var(--cocoa); color: var(--cocoa); padding: 11px 13px; font: 700 14px/1 var(--sans); cursor: pointer; align-items: center; gap: 9px; }
+.menu-btn i { display: grid; gap: 4px; } .menu-btn i b { display: block; width: 16px; height: 2px; background: var(--cocoa); }
+.drop { display: none; position: fixed; left: 0; right: 0; z-index: 45; background: var(--paper); border-bottom: 3px solid var(--terra); box-shadow: 0 22px 40px rgba(45,31,25,.2); }
+.drop.open { display: block; }
+.drop a { display: block; padding: 15px 22px; font: 600 24px/1 var(--serif); text-decoration: none; border-top: 1px solid var(--line); }
+.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(45,31,25,.4); }
+.scrim.open { display: block; }
+
+/* hero mood board */
+.hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-block: 60px 90px; }
+.label { font: 700 13.5px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--terra); }
+.hero h1 { font-size: clamp(50px, 6.4vw, 88px); margin: 18px 0 22px; }
+.hero p { font-size: 20px; color: var(--mute); margin: 0 0 30px; max-width: 46ch; }
+.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.board { position: relative; height: 560px; }
+.print { position: absolute; background: #fff; padding: 10px 10px 34px; box-shadow: 0 18px 36px rgba(45,31,25,.2); }
+.print img { width: 100%; height: 100%; object-fit: cover; }
+.print span { position: absolute; left: 12px; bottom: 9px; font: italic 500 16px/1 var(--serif); color: var(--mute); }
+.print::before { content: ""; position: absolute; top: -10px; left: 50%; width: 70px; height: 22px; margin-left: -35px; background: rgba(241,210,199,.85); transform: rotate(-3deg); }
+.p1 { width: 56%; height: 74%; left: 0; top: 4%; transform: rotate(-3deg); }
+.p2 { width: 50%; height: 52%; right: 0; top: 0; transform: rotate(4deg); }
+.p3 { width: 46%; height: 50%; right: 6%; bottom: 0; transform: rotate(-2deg); }
+.swatches { position: absolute; left: 6%; bottom: 0; display: flex; box-shadow: 0 10px 24px rgba(45,31,25,.18); z-index: 2; }
+.swatches i { width: 42px; height: 58px; }
+
+/* strip */
+.strip { background: var(--cocoa); color: #f3e5db; }
+.strip .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 40px; padding-block: 20px; font-size: 16.5px; }
+.strip b { color: #fff; }
+
+section { padding-block: 96px; }
+.head { text-align: center; max-width: 760px; margin: 0 auto 52px; }
+.head h2 { font-size: clamp(42px, 5.2vw, 66px); margin-top: 14px; }
+.head p { color: var(--mute); font-size: 19px; margin: 16px auto 0; }
+
+/* looks */
+.looks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.look { background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; }
+.look .ph { aspect-ratio: 4 / 5; overflow: hidden; }
+.look .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+.look:hover .ph img { transform: scale(1.04); }
+.look .body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.look h3 { font-size: 30px; }
+.look p { margin: 0; color: var(--mute); font-size: 16.5px; }
+.chips { display: flex; gap: 6px; }
+.chips i { width: 30px; height: 30px; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); }
+.look .btn { margin-top: auto; }
+
+/* builder */
+.build { background: var(--paper); border-block: 1px solid var(--line); }
+.builder { display: grid; grid-template-columns: 1.3fr .9fr; gap: 40px; align-items: start; }
+.cats { display: grid; gap: 22px; }
+.cat h3 { font-size: 26px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.cat h3::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.items { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.item { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--linen); border: 1px solid var(--line); padding: 10px 10px 10px 14px; }
+.item span { font-weight: 600; font-size: 16px; line-height: 1.3; }
+.step { display: flex; align-items: center; border: 1px solid #d5c2b3; background: #fff; flex: none; }
+.step button { width: 38px; height: 38px; border: 0; background: none; font: 700 20px/1 var(--sans); color: var(--terra); cursor: pointer; }
+.step button:hover { background: var(--blush); }
+.step output { min-width: 34px; text-align: center; font-weight: 700; font-size: 16px; }
+.item.on { border-color: var(--terra); background: #fbe9e1; }
+.list { position: sticky; top: 96px; background: #fff; border: 1px solid var(--line); box-shadow: 0 20px 44px rgba(45,31,25,.12); }
+.list .tagline { background: var(--terra); color: #fff; padding: 16px 22px; font: italic 500 22px/1.2 var(--serif); }
+.list .in { padding: 22px; }
+.list ul { list-style: none; padding: 0; margin: 0 0 18px; min-height: 60px; }
+.list li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 16.5px; }
+.list li b { color: var(--terra); }
+.empty { color: var(--mute); font-size: 16px; padding: 10px 0; }
+.list label { display: grid; gap: 6px; font: 700 13px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--mute); margin-bottom: 14px; }
+.list input, .list select { font: 400 17px/1.4 var(--sans); padding: 12px 13px; border: 1.5px solid #d5c2b3; background: var(--linen); color: var(--cocoa); width: 100%; border-radius: 0; }
+.list input:focus, .list select:focus { outline: 2px solid var(--terra); border-color: var(--terra); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* showroom */
+.showroom .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 54px; align-items: center; }
+.showroom figure { margin: 0; position: relative; }
+.showroom figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.showroom figure::after { content: ""; position: absolute; inset: 14px; border: 1px dashed rgba(255,255,255,.6); pointer-events: none; }
+.showroom h2 { font-size: clamp(40px, 4.6vw, 58px); margin: 14px 0 16px; }
+.showroom p { color: var(--mute); margin: 0 0 16px; }
+.shelf { list-style: none; padding: 0; margin: 0 0 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+.shelf li { display: flex; gap: 10px; align-items: center; font-weight: 600; font-size: 16.5px; }
+.shelf li::before { content: ""; width: 10px; height: 10px; background: var(--peach); flex: none; }
+
+/* reviews */
+.notes { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 24px; align-items: start; }
+.note { margin: 0; background: #fff; padding: 28px 26px 26px; box-shadow: 0 14px 30px rgba(45,31,25,.1); position: relative; }
+.note:nth-child(1) { transform: rotate(-1.2deg); } .note:nth-child(3) { transform: rotate(1.2deg); }
+.note::before { content: ""; position: absolute; top: -9px; left: 24px; width: 60px; height: 18px; background: rgba(240,160,106,.55); }
+.note p { font: italic 500 22px/1.4 var(--serif); margin: 0 0 14px; }
+.note cite { font-style: normal; font-weight: 700; font-size: 14px; color: var(--terra); letter-spacing: .06em; }
+
+footer { background: var(--cocoa); color: #e8d8cd; padding-block: 50px 110px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; align-items: flex-end; }
+footer b { display: block; font: italic 500 34px/1 var(--serif); color: #fff; margin-bottom: 10px; }
+footer a { color: #fff; }
+
+/* mobile list bar */
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; background: var(--cocoa); color: #fff; padding: 10px max(14px, env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)); align-items: center; gap: 12px; }
+.bar .count { flex: 1; font-weight: 600; font-size: 16px; line-height: 1.3; }
+.bar .count small { display: block; color: #d8c4b8; font-weight: 500; font-size: 13.5px; }
+.bar a.call { color: #fff; border: 1px solid rgba(255,255,255,.5); padding: 12px 14px; text-decoration: none; font-weight: 700; font-size: 15px; }
+.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+
+@media (max-width: 1000px) {
+  .top nav { display: none; } .menu-btn { display: inline-flex; }
+  .hero .wrap, .showroom .wrap, .builder { grid-template-columns: 1fr; }
+  .board { height: 520px; max-width: 620px; width: 100%; margin: 0 auto; }
+  .looks { grid-template-columns: 1fr 1fr; }
+  .notes { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+  .list { position: static; }
+  .bar { display: flex; }
+}
+@media (max-width: 640px) {
+  section { padding-block: 68px; }
+  .hero .wrap { padding-block: 40px 60px; gap: 40px; }
+  .hero h1 { font-size: 46px; }
+  .hero p { font-size: 18.5px; }
+  .ctas .btn { flex: 1 1 100%; }
+  .board { height: 400px; }
+  .p1 { width: 64%; height: 70%; } .p2 { width: 54%; height: 50%; } .p3 { width: 50%; height: 46%; right: 2%; }
+  .swatches i { width: 30px; height: 44px; }
+  .looks, .items, .shelf, .row2 { grid-template-columns: 1fr; }
+  .look .ph { aspect-ratio: 4 / 3.6; }
+  .brand b { font-size: 25px; }
+  .note:nth-child(n) { transform: none; }
+  .strip .wrap { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<div class="demo">Demo website made for Pretty Woman Events &amp; Rentals. Items and prices to be confirmed by you.</div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Pretty Woman Events and Rentals home"><b>Pretty Woman</b><small>Events &amp; Rentals</small></a>
+  <nav aria-label="Primary"><a href="#looks">The looks</a><a href="#showroom">Showroom</a><a href="#reviews">Reviews</a><a class="btn small" href="#build">Build your table</a></nav>
+  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="drop"><i><b></b><b></b><b></b></i>Menu</button>
+</div></header>
+<div class="scrim" id="scrim"></div>
+<nav class="drop" id="drop" aria-label="Menu"><a href="#looks">The looks</a><a href="#build">Build your table</a><a href="#showroom">Showroom</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+
+<div class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="label rv">Décor &amp; party rentals · Accra</span>
+    <h1 class="rv">Tables your guests will <em>photograph.</em></h1>
+    <p class="rv">Styled tablescapes, canopies, draping, chairs, glassware and florals for weddings, birthdays and life celebrations, from one showroom.</p>
+    <div class="ctas rv"><a class="btn" href="#build">Build your table</a><a class="btn soft" href="#looks">See the looks</a></div>
+  </div>
+  <div class="board rv" aria-label="Mood board of Pretty Woman tablescapes">
+    <figure class="print p1"><img src="img/blush-close.webp" alt="Blush and coral florals on a long table with gold-rimmed plates"><span>Blush &amp; coral</span></figure>
+    <figure class="print p2"><img src="img/canopy.webp" alt="Draped garden canopy over a long wooden table on the lawn"><span>Garden canopy</span></figure>
+    <figure class="print p3"><img src="img/navy-throne.webp" alt="White throne chair beside a navy table with mirrored trays"><span>Navy &amp; silver</span></figure>
+    <div class="swatches" aria-hidden="true"><i style="background:#b9471f"></i><i style="background:#f1d2c7"></i><i style="background:#f0a06a"></i><i style="background:#84552f"></i><i style="background:#66804f"></i></div>
+  </div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span><b>Weddings</b> · birthdays · life celebrations</span>
+  <span>Showroom on <b>Shamo Kwei Avenue</b></span>
+  <span><b>4.3 ★</b> from 40 Google reviews</span>
+</div></div>
+
+<section id="looks"><div class="wrap">
+  <div class="head rv"><span class="label">The lookbook</span><h2>Pick a look. <em>We'll style it.</em></h2><p>A few of the tables we've dressed. Choose one as your starting point, then change the colours to suit your day.</p></div>
+  <div class="looks">
+    <article class="look rv"><div class="ph"><img src="img/garden.webp" alt="Long wooden tables under a blush canopy on a garden lawn" loading="lazy" style="object-position:50% 50%"></div><div class="body">
+      <div class="chips" aria-label="Colours: terracotta, blush, walnut, sage"><i style="background:#b9471f"></i><i style="background:#f1d2c7"></i><i style="background:#84552f"></i><i style="background:#66804f"></i></div>
+      <h3>Terracotta Garden</h3><p>Open-air canopy, walnut cross-back chairs, terracotta napkins and coral florals on the lawn.</p>
+      <a class="btn soft" href="#build" data-look="Terracotta Garden">Start with this look</a></div></article>
+    <article class="look rv"><div class="ph"><img src="img/blush-long.webp" alt="White hall with blush draping and long tables with peach florals" loading="lazy"></div><div class="body">
+      <div class="chips" aria-label="Colours: blush, peach, gold, ivory"><i style="background:#f1d2c7"></i><i style="background:#f0a06a"></i><i style="background:#c9a35a"></i><i style="background:#fbf7f2"></i></div>
+      <h3>Blush &amp; Gold</h3><p>Soft blush draping overhead, gold-rimmed glassware and long rows of peach and white blooms.</p>
+      <a class="btn soft" href="#build" data-look="Blush &amp; Gold">Start with this look</a></div></article>
+    <article class="look rv"><div class="ph"><img src="img/navy-table.webp" alt="Navy table with pink florals, mirrored trays and crystal glassware" loading="lazy" style="object-position:40% 50%"></div><div class="body">
+      <div class="chips" aria-label="Colours: navy, silver, blush, green"><i style="background:#1e2c4f"></i><i style="background:#c9ccd3"></i><i style="background:#f1c4c9"></i><i style="background:#4e6b3a"></i></div>
+      <h3>Navy &amp; Silver</h3><p>Deep navy linen, mirrored trays, crystal stemware and a white throne chair for the celebrant.</p>
+      <a class="btn soft" href="#build" data-look="Navy &amp; Silver">Start with this look</a></div></article>
+  </div>
+</div></section>
+
+<section class="build" id="build"><div class="wrap">
+  <div class="head rv"><span class="label">Build your table</span><h2>Make your <em>rental list.</em></h2><p>Tap + on everything you need. We'll reply on WhatsApp with availability and a quote.</p></div>
+  <div class="builder">
+    <div class="cats" id="cats"></div>
+    <aside class="list rv" aria-label="Your rental list">
+      <div class="tagline" id="lookline">Your list</div>
+      <div class="in">
+        <ul id="sel"><li class="empty">Nothing added yet. Tap + on an item.</li></ul>
+        <form id="form">
+          <div class="row2">
+            <label>Event<select name="type"><option>Wedding</option><option>Birthday</option><option>Life celebration</option><option>Engagement</option><option>Baby shower / naming</option><option>Corporate event</option><option>Other</option></select></label>
+            <label>Date<input type="date" name="date" required></label>
+          </div>
+          <div class="row2">
+            <label>Guests<input type="number" name="guests" min="1" inputmode="numeric" placeholder="e.g. 120"></label>
+            <label>Venue / area<input name="area" placeholder="e.g. East Legon"></label>
+          </div>
+          <label>Your name<input name="name" autocomplete="name" required></label>
+          <button class="btn" type="submit" style="width:100%">Send list on WhatsApp</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</div></section>
+
+<section class="showroom" id="showroom"><div class="wrap">
+  <figure class="rv"><img src="img/showroom.webp" alt="Pretty Woman Events &amp; Rentals storefront at night with balloon garland and shelves of glassware inside" loading="lazy"></figure>
+  <div class="rv">
+    <span class="label">The showroom</span>
+    <h2>Come and <em>touch the linen.</em></h2>
+    <p>See and choose your pieces in person at our showroom on Shamo Kwei Avenue, from shelves of glassware to chargers, cutlery and statement chairs.</p>
+    <ul class="shelf"><li>Crystal &amp; gold-rim glassware</li><li>Chargers &amp; dinnerware</li><li>Gold cutlery</li><li>Throne &amp; accent chairs</li><li>Candle holders &amp; stands</li><li>Chandeliers &amp; lighting</li></ul>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Pretty%20Woman%20Event%20%26%20Rentals%2C%20Shamo%20Kwei%20Ave%2C%20Accra" target="_blank" rel="noopener">Get directions</a>
+  </div>
+</div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap">
+  <div class="head rv"><span class="label">Kind words</span><h2>From our <em>clients.</em></h2></div>
+  <div class="notes">
+    <figure class="note rv"><p>"Wanna plan a wedding, birthday or life celebration party? Look no where, Pretty Woman is the best choice."</p><cite>GOOGLE REVIEW ★★★★★</cite></figure>
+    <figure class="note rv"><p>"Great service."</p><cite>GOOGLE REVIEW ★★★★★</cite></figure>
+    <figure class="note rv"><p>"Never a dull moment."</p><cite>GOOGLE REVIEW ★★★★</cite></figure>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <div><b>Pretty Woman</b>Events &amp; Rentals · Shamo Kwei Avenue, Accra<br>Call or WhatsApp <a href="tel:+233243536689">024 353 6689</a></div>
+  <a class="btn" href="#build">Build your table</a>
+</div></footer>
+
+<div class="bar" id="bar"><div class="count" id="barCount">Your list is empty<small>Tap + to add rentals</small></div><a class="call" href="tel:+233243536689">Call</a><a class="btn small" href="#build" id="barGo">View list</a></div>
+
+<script>
+(() => {
+  const WA = '233243536689';
+  const CATS = {
+    'Seating & tables': ['Cross-back chairs', 'Chiavari chairs', 'Throne chair', 'Long banquet tables', 'Round tables'],
+    'Linen & draping': ['Table linen', 'Napkins', 'Ceiling / wall draping', 'Chair sashes'],
+    'Table settings': ['Chargers', 'Dinner plates', 'Gold cutlery sets', 'Wine & water glasses', 'Champagne flutes'],
+    'Décor & cover': ['Floral centrepieces', 'Candle holders', 'Canopy / tent', 'Flower wall / backdrop', 'Lighting & chandeliers']
+  };
+  const q = {}; let look = '';
+  const cats = document.getElementById('cats');
+  Object.entries(CATS).forEach(([c, items]) => {
+    const d = document.createElement('div'); d.className = 'cat rv';
+    d.innerHTML = '<h3>' + c + '</h3><div class="items">' + items.map(n => '<div class="item" data-n="' + n + '"><span>' + n + '</span><div class="step"><button type="button" data-d="-1" aria-label="Remove one ' + n + '">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Add one ' + n + '">+</button></div></div>').join('') + '</div>';
+    cats.appendChild(d);
+  });
+  const sel = document.getElementById('sel'), barCount = document.getElementById('barCount'), lookline = document.getElementById('lookline');
+  const render = () => {
+    const picked = Object.entries(q).filter(([, v]) => v > 0);
+    sel.innerHTML = picked.length ? picked.map(([n, v]) => '<li><span>' + n + '</span><b>× ' + v + '</b></li>').join('') : '<li class="empty">Nothing added yet. Tap + on an item.</li>';
+    document.querySelectorAll('.item').forEach(it => { const v = q[it.dataset.n] || 0; it.querySelector('output').textContent = v; it.classList.toggle('on', v > 0); });
+    const total = picked.length;
+    barCount.innerHTML = total ? total + ' item' + (total > 1 ? 's' : '') + ' on your list<small>' + (look ? look + ' look' : 'Ready to send') + '</small>' : 'Your list is empty<small>Tap + to add rentals</small>';
+    lookline.textContent = look ? 'Your list · ' + look : 'Your list';
+  };
+  cats.addEventListener('click', e => {
+    const b = e.target.closest('button[data-d]'); if (!b) return;
+    const n = b.closest('.item').dataset.n, step = n.includes('chair') || n.includes('glasses') || n.includes('flutes') || n.includes('plates') || n.includes('Chargers') || n.includes('cutlery') || n.includes('Napkins') ? 10 : 1;
+    const v = Math.max(0, (q[n] || 0) + Number(b.dataset.d) * (n === 'Throne chair' ? 1 : step));
+    q[n] = v; render();
+  });
+  document.querySelectorAll('[data-look]').forEach(a => a.addEventListener('click', () => { look = a.dataset.look.replace('&amp;', '&'); render(); }));
+  render();
+
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .06 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+  const btn = document.getElementById('menuBtn'), drop = document.getElementById('drop'), scrim = document.getElementById('scrim'), head = document.querySelector('header.top');
+  const close = () => { drop.classList.remove('open'); scrim.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.onclick = () => { const o = !drop.classList.contains('open'); drop.style.top = head.getBoundingClientRect().bottom + 'px'; drop.classList.toggle('open', o); scrim.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); };
+  scrim.onclick = close; drop.querySelectorAll('a').forEach(a => a.onclick = close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  // on phones, "View list" jumps to the list itself
+  document.getElementById('barGo').addEventListener('click', e => { e.preventDefault(); document.querySelector('.list').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+
+  const f = document.getElementById('form');
+  f.date.min = new Date().toISOString().slice(0, 10);
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    const picked = Object.entries(q).filter(([, v]) => v > 0);
+    const d = new Date(f.date.value + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    let m = 'Hello Pretty Woman Events & Rentals! I would like a quote.\n\nEvent: ' + f.type.value + '\nDate: ' + d;
+    if (f.guests.value) m += '\nGuests: ' + f.guests.value;
+    if (f.area.value) m += '\nVenue / area: ' + f.area.value;
+    if (look) m += '\nLook I like: ' + look;
+    m += '\n\nMy list:\n' + (picked.length ? picked.map(([n, v]) => '- ' + n + ' x ' + v).join('\n') : '- (not sure yet, please advise)');
+    m += '\n\nName: ' + f.name.value + '\nThank you!';
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(m), '_blank', 'noopener');
+  });
+})();
+</script>
+
+<!-- jb-credit -->
+<div class="jb-credit" style="all:revert;display:block;margin:0;padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px));background:#111;color:#cfcfcf;font:500 13px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;text-align:center;position:relative;z-index:1">Website designed by <b style="color:#fff">Joseph Bortey</b> · <a href="tel:+233265768743" style="color:#fff;text-decoration:underline">026 576 8743</a></div>
+<style>@media (max-width:760px){.jb-credit{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}}</style>
+<img src="https://hits.sh/josephbortey2003-droid.github.io/prettywomanevents-demo.svg" alt="" width="1" height="1" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none" referrerpolicy="no-referrer" loading="eager">
+</body>
+</html>
