@@ -187,9 +187,7 @@ footer p { margin: 0 0 6px; overflow-wrap: anywhere; }
 .rv.in { opacity: 1; transform: none; }
 
 @media (max-width: 1040px) {
-  .top nav { display: none; } .ham { display: inline-flex; }
-  .hero .wrap, .room .wrap { grid-template-columns: minmax(0, 1fr); }
-  .pics { min-height: 0; aspect-ratio: 5 / 4; max-width: 620px; width: 100%; }
+  .top nav { gap: 16px; font-size: 14.5px; }
   .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .shopg { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .side { position: static; display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px; margin-inline: -20px; padding: 2px 20px 6px; scrollbar-width: none; }
@@ -199,7 +197,12 @@ footer p { margin: 0 0 6px; overflow-wrap: anywhere; }
   .looks, .revs { grid-template-columns: minmax(0, 1fr); }
   .svc, .evs, .how { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   footer .wrap { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  .top nav { display: none; } .ham { display: inline-flex; }
   .bar { display: flex; }
+  .hero .wrap, .room .wrap { grid-template-columns: minmax(0, 1fr); }
+  .pics { min-height: 0; aspect-ratio: 5 / 4; max-width: 620px; width: 100%; }
 }
 @media (max-width: 640px) {
   .brand b { font-size: 19px; } .brand small { letter-spacing: .14em; font-size: 9.5px; }
