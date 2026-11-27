@@ -4,356 +4,431 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Pretty Woman Events &amp; Rentals | Event décor, tablescapes &amp; party rentals in Accra</title>
-<meta name="description" content="Pretty Woman Events & Rentals, Shamo Kwei Avenue, Accra. Styled tablescapes, canopies, draping, chairs, glassware, chargers and centrepieces for weddings, birthdays and life celebrations. Build your table and get a quote on WhatsApp.">
+<title>Pretty Woman Events &amp; Rentals | Event rentals, décor &amp; styling in East Legon, Accra</title>
+<meta name="description" content="Pretty Woman Events &amp; Rentals, East Legon, Accra. Rent tents and canopies, draping, tables and linen, throne and cross-back chairs, chargers, glassware, florals and candles. Event planning, décor and styling. Build your quote list and send it on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Karla:wght@400;500;600;700&display=swap">
 <style>
-/* Pretty Woman — brand from THEIR work: terracotta napkins, blush drapes, coral/peach florals, gold glassware,
-   walnut cross-back chairs, garden lawns; storefront in black with orange + white balloons.
-   Unique style: stylist's LOOKBOOK / mood board — pinned prints on linen, colour swatch chips per look, and an
-   interactive "Build your table" rental list that goes to WhatsApp. Petrona + Karla (never used before).
-   Buttons: rectangular with a stitched inner border (linen/tailoring). No pills. Light only. */
+/* Pretty Woman v2 (Nov 27 2026). Brand = THEIR signboard (Facebook cover): gold baroque "PW" crest, gold condensed caps
+   on a slate wall, magenta tagline. Layout from studying top event-rental sites (vibe-coding-playbook "Niche patterns:
+   Event rentals & décor"): Bright = category tiles + catalog + quote cart with count + showroom appointment;
+   Something Vintage = item cards with qty stepper + "add to quote" + shop by look/packages; Archive = events by type + FAQ.
+   Prices: "on request" until the owner gives them. */
 :root {
-  --linen: #f8f1ea; --paper: #fffaf5; --cocoa: #2d1f19; --mute: #5e4c43; --terra: #b9471f; --terra-d: #93361a;
-  --blush: #f1d2c7; --peach: #f0a06a; --sage: #66804f; --walnut: #84552f; --line: #e6d6c8;
-  --serif: "Petrona", Georgia, serif; --sans: "Karla", "Segoe UI", system-ui, sans-serif;
+  --slate: #1b2632; --slate2: #26384a; --ink: #1b2632; --ivory: #f4f2ee; --paper: #fffdfa; --mute: #59616e; --line: #e1dcd2;
+  --gold: #c9a24a; --gold-l: #ecd08a; --gold-t: #9a7020; --mag: #b0306f; --mag-l: #f08cc0;
+  --head: "Oswald", "Arial Narrow", sans-serif; --body: "Karla", "Segoe UI", system-ui, sans-serif;
   color-scheme: light;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html, body { overflow-x: clip; }
-body {
-  margin: 0; color: var(--cocoa); font: 400 18px/1.7 var(--sans);
-  /* woven linen texture */
-  background: var(--linen) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 0h6v1H0zM0 0h1v6H0z' fill='%23b9471f' fill-opacity='.035'/%3E%3C/svg%3E");
-}
+body { margin: 0; background: var(--ivory); color: var(--ink); font: 400 17.5px/1.65 var(--body); }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--terra); outline-offset: 3px; }
-.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; margin: 0; letter-spacing: -.01em; line-height: 1.05; }
-em { font-style: italic; font-weight: 500; color: var(--terra); }
-.demo { background: var(--cocoa); color: #ecdcd2; font-size: 13px; text-align: center; padding: 7px 12px; }
+:focus-visible { outline: 3px solid var(--mag); outline-offset: 3px; }
+section[id] { scroll-margin-top: 78px; }
+.wrap { max-width: 1220px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--head); font-weight: 600; margin: 0; line-height: 1.06; text-transform: uppercase; letter-spacing: .01em; }
+.gold { background: linear-gradient(180deg, var(--gold-l), var(--gold)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tag { display: block; font: 700 13px/1.2 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--mag); margin-bottom: 12px; }
+.demo { background: #10171f; color: #d9d4c8; font-size: 13px; text-align: center; padding: 7px 12px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 700 16px/1 var(--body); padding: 17px 24px; border: 0; border-radius: 3px; cursor: pointer; text-decoration: none; background: linear-gradient(180deg, var(--gold-l), var(--gold)); color: var(--slate); box-shadow: inset 0 -2px 0 rgba(0,0,0,.12); }
+.btn:hover { filter: brightness(1.06); }
+.btn.out { background: transparent; color: #fff; box-shadow: inset 0 0 0 1.5px rgba(236,208,138,.75); }
+.btn.dark { background: var(--slate); color: var(--gold-l); }
+.btn svg { width: 18px; height: 18px; flex: none; }
 
-/* stitched buttons */
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; position: relative; font: 700 16px/1 var(--sans); padding: 18px 26px; background: var(--terra); color: #fff; text-decoration: none; border: 0; cursor: pointer; transition: background .2s; }
-.btn::after { content: ""; position: absolute; inset: 4px; border: 1px dashed rgba(255,255,255,.55); pointer-events: none; }
-.btn:hover { background: var(--terra-d); }
-.btn.soft { background: var(--blush); color: var(--cocoa); }
-.btn.soft::after { border-color: rgba(45,31,25,.35); }
-.btn.soft:hover { background: #ebc2b4; }
-.btn.small { padding: 13px 16px; font-size: 14.5px; }
-
-header.top { position: sticky; top: 0; z-index: 40; background: rgba(255,250,245,.97); border-bottom: 1px solid var(--line); }
-header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
-.brand { text-decoration: none; line-height: 1; }
-.brand b { display: block; font: italic 500 30px/1 var(--serif); color: var(--cocoa); }
-.brand small { display: block; font: 700 11px/1 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--terra); margin-top: 5px; }
-.top nav { display: flex; align-items: center; gap: 26px; font: 600 16px/1 var(--sans); }
-.top nav a { text-decoration: none; }
-.top nav a:not(.btn):hover { color: var(--terra); }
-.top nav a.btn { color: #fff; }
-.menu-btn { display: none; background: var(--paper); border: 1.5px solid var(--cocoa); color: var(--cocoa); padding: 11px 13px; font: 700 14px/1 var(--sans); cursor: pointer; align-items: center; gap: 9px; }
-.menu-btn i { display: grid; gap: 4px; } .menu-btn i b { display: block; width: 16px; height: 2px; background: var(--cocoa); }
-.drop { display: none; position: fixed; left: 0; right: 0; z-index: 45; background: var(--paper); border-bottom: 3px solid var(--terra); box-shadow: 0 22px 40px rgba(45,31,25,.2); }
+header.top { position: sticky; top: 0; z-index: 40; background: rgba(27,38,50,.97); color: #f1ede4; border-bottom: 1px solid rgba(201,162,74,.35); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
+.brand img { width: 46px; height: 46px; border-radius: 50%; box-shadow: 0 0 0 1.5px rgba(201,162,74,.6); flex: none; }
+.brand b { display: block; font: 600 24px/1 var(--head); letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.brand small { display: block; font: 700 10.5px/1 var(--body); letter-spacing: .24em; text-transform: uppercase; color: var(--mag-l); margin-top: 5px; white-space: nowrap; }
+.top nav { display: flex; align-items: center; gap: 24px; font: 600 15.5px/1 var(--body); }
+.top nav a { text-decoration: none; color: #e9e4da; }
+.top nav a:hover { color: var(--gold-l); }
+.qbtn { display: inline-flex; align-items: center; gap: 8px; font: 700 15px/1 var(--body); padding: 11px 14px; border-radius: 3px; border: 0; cursor: pointer; background: linear-gradient(180deg, var(--gold-l), var(--gold)); color: var(--slate); }
+.qbtn svg { width: 18px; height: 18px; }
+.qbtn .n { min-width: 22px; height: 22px; border-radius: 11px; background: var(--mag); color: #fff; font-size: 12.5px; display: inline-grid; place-items: center; padding: 0 6px; }
+.ham { display: none; width: 44px; height: 44px; border-radius: 3px; border: 1.5px solid rgba(236,208,138,.6); background: transparent; cursor: pointer; align-items: center; justify-content: center; flex: none; }
+.ham i { display: grid; gap: 4px; } .ham i b { display: block; width: 18px; height: 2px; background: var(--gold-l); }
+.right { display: flex; align-items: center; gap: 8px; flex: none; }
+.drop { display: none; position: fixed; left: 0; right: 0; z-index: 45; background: var(--slate); border-bottom: 3px solid var(--gold); }
 .drop.open { display: block; }
-.drop a { display: block; padding: 15px 22px; font: 600 24px/1 var(--serif); text-decoration: none; border-top: 1px solid var(--line); }
-.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(45,31,25,.4); }
+.drop a { display: block; padding: 15px 22px; font: 600 22px/1 var(--head); text-transform: uppercase; color: #f1ede4; text-decoration: none; border-top: 1px solid rgba(255,255,255,.08); }
+.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(16,23,31,.5); }
 .scrim.open { display: block; }
 
-/* hero mood board */
-.hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-block: 60px 90px; }
-.label { font: 700 13.5px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--terra); }
-.hero h1 { font-size: clamp(50px, 6.4vw, 88px); margin: 18px 0 22px; }
-.hero p { font-size: 20px; color: var(--mute); margin: 0 0 30px; max-width: 46ch; }
-.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-.board { position: relative; height: 560px; }
-.print { position: absolute; background: #fff; padding: 10px 10px 34px; box-shadow: 0 18px 36px rgba(45,31,25,.2); }
-.print img { width: 100%; height: 100%; object-fit: cover; }
-.print span { position: absolute; left: 12px; bottom: 9px; font: italic 500 16px/1 var(--serif); color: var(--mute); }
-.print::before { content: ""; position: absolute; top: -10px; left: 50%; width: 70px; height: 22px; margin-left: -35px; background: rgba(241,210,199,.85); transform: rotate(-3deg); }
-.p1 { width: 56%; height: 74%; left: 0; top: 4%; transform: rotate(-3deg); }
-.p2 { width: 50%; height: 52%; right: 0; top: 0; transform: rotate(4deg); }
-.p3 { width: 46%; height: 50%; right: 6%; bottom: 0; transform: rotate(-2deg); }
-.swatches { position: absolute; left: 6%; bottom: 0; display: flex; box-shadow: 0 10px 24px rgba(45,31,25,.18); z-index: 2; }
-.swatches i { width: 42px; height: 58px; }
+.hero { background: radial-gradient(120% 90% at 85% 15%, #3b4c5d 0%, #22323f 45%, #142230 100%); color: #f1ede4; overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: 44px; align-items: center; padding-block: 52px 64px; }
+.plaque { width: min(240px, 70%); height: auto; border-radius: 4px; box-shadow: 0 0 0 1px rgba(201,162,74,.45), 0 16px 34px rgba(0,0,0,.35); margin-bottom: 22px; }
+.hero .tag { color: var(--mag-l); }
+.hero h1 { font-size: clamp(40px, 5vw, 70px); color: #fff; }
+.hero p { color: #cfd5dd; font-size: 19px; margin: 18px 0 26px; max-width: 46ch; }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.chips span { font: 600 14px/1 var(--body); padding: 9px 12px; border: 1px solid rgba(236,208,138,.35); border-radius: 3px; color: #e9e4da; }
+.chips b { color: var(--gold-l); }
+.pics { position: relative; min-height: 470px; }
+.pics img { position: absolute; object-fit: cover; border-radius: 4px; box-shadow: 0 24px 50px rgba(0,0,0,.45); }
+.pics .a { width: 80%; aspect-ratio: 3 / 2; right: 0; top: 0; }
+.pics .b { width: 46%; aspect-ratio: 900 / 918; left: 0; bottom: 0; border: 6px solid #f4f2ee; }
 
-/* strip */
-.strip { background: var(--cocoa); color: #f3e5db; }
-.strip .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 40px; padding-block: 20px; font-size: 16.5px; }
-.strip b { color: #fff; }
+section { padding-block: clamp(56px, 7vw, 92px); }
+.sh { display: flex; justify-content: space-between; align-items: end; gap: 18px; flex-wrap: wrap; margin-bottom: 28px; }
+.sh h2 { font-size: clamp(34px, 4.2vw, 54px); }
+.sh p { margin: 0; color: var(--mute); max-width: 44ch; }
 
-section { padding-block: 96px; }
-.head { text-align: center; max-width: 760px; margin: 0 auto 52px; }
-.head h2 { font-size: clamp(42px, 5.2vw, 66px); margin-top: 14px; }
-.head p { color: var(--mute); font-size: 19px; margin: 16px auto 0; }
+.cats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.cat { position: relative; display: block; border: 0; padding: 0; border-radius: 4px; overflow: hidden; cursor: pointer; text-align: left; background: var(--slate); min-width: 0; }
+.cat img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .6s; }
+.cat:hover img { transform: scale(1.04); }
+.cat::after { content: ""; position: absolute; inset: 25% 0 0; background: linear-gradient(transparent, rgba(16,23,31,.55) 35%, rgba(16,23,31,.92)); }
+.cat span { text-shadow: 0 1px 6px rgba(0,0,0,.5); }
+.cat span { position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 1; color: #fff; font: 600 20px/1.1 var(--head); text-transform: uppercase; letter-spacing: .02em; }
+.cat small { display: block; font: 600 13px/1.3 var(--body); text-transform: none; letter-spacing: 0; color: var(--gold-l); margin-top: 4px; }
 
-/* looks */
-.looks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-.look { background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; }
-.look .ph { aspect-ratio: 4 / 5; overflow: hidden; }
-.look .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
-.look:hover .ph img { transform: scale(1.04); }
-.look .body { padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
-.look h3 { font-size: 30px; }
-.look p { margin: 0; color: var(--mute); font-size: 16.5px; }
-.chips { display: flex; gap: 6px; }
-.chips i { width: 30px; height: 30px; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); }
+.shop { background: var(--paper); border-block: 1px solid var(--line); }
+.shopg { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: start; }
+.side { position: sticky; top: 90px; display: grid; gap: 2px; }
+.side button { text-align: left; font: 600 15.5px/1.2 var(--body); padding: 11px 12px; border: 0; border-left: 3px solid transparent; background: none; color: var(--ink); cursor: pointer; }
+.side button[aria-pressed="true"] { border-left-color: var(--gold); background: var(--ivory); color: var(--slate); font-weight: 700; }
+.items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.item { background: #fff; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.item[hidden] { display: none; }
+.item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.item .in { padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+.item h3 { font-size: 18px; letter-spacing: .02em; }
+.item p { margin: 0; color: var(--mute); font-size: 14.5px; line-height: 1.45; }
+.price { font: 700 14px/1 var(--body); color: var(--gold-t); margin-top: 2px; }
+.qty { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 10px; }
+.step { display: flex; align-items: center; border: 1px solid #d8d1c3; border-radius: 3px; flex: none; }
+.step button { width: 36px; height: 40px; border: 0; background: none; font: 700 20px/1 var(--body); color: var(--slate); cursor: pointer; }
+.step output { min-width: 30px; text-align: center; font-weight: 700; }
+.add { flex: 1; min-width: 0; height: 42px; border: 0; border-radius: 3px; background: var(--slate); color: var(--gold-l); font: 700 14.5px/1 var(--body); cursor: pointer; }
+.add.on { background: var(--mag); color: #fff; }
+.note { margin-top: 18px; color: var(--mute); font-size: 15px; }
+
+.looks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.look { background: #fff; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.look img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.look .in { padding: 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.look h3 { font-size: 24px; }
+.look p { margin: 0; color: var(--mute); font-size: 15.5px; }
+.sw { display: flex; gap: 5px; } .sw i { width: 22px; height: 22px; border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
 .look .btn { margin-top: auto; }
 
-/* builder */
-.build { background: var(--paper); border-block: 1px solid var(--line); }
-.builder { display: grid; grid-template-columns: 1.3fr .9fr; gap: 40px; align-items: start; }
-.cats { display: grid; gap: 22px; }
-.cat h3 { font-size: 26px; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
-.cat h3::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-.items { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.item { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--linen); border: 1px solid var(--line); padding: 10px 10px 10px 14px; }
-.item span { font-weight: 600; font-size: 16px; line-height: 1.3; }
-.step { display: flex; align-items: center; border: 1px solid #d5c2b3; background: #fff; flex: none; }
-.step button { width: 38px; height: 38px; border: 0; background: none; font: 700 20px/1 var(--sans); color: var(--terra); cursor: pointer; }
-.step button:hover { background: var(--blush); }
-.step output { min-width: 34px; text-align: center; font-weight: 700; font-size: 16px; }
-.item.on { border-color: var(--terra); background: #fbe9e1; }
-.list { position: sticky; top: 96px; background: #fff; border: 1px solid var(--line); box-shadow: 0 20px 44px rgba(45,31,25,.12); }
-.list .tagline { background: var(--terra); color: #fff; padding: 16px 22px; font: italic 500 22px/1.2 var(--serif); }
-.list .in { padding: 22px; }
-.list ul { list-style: none; padding: 0; margin: 0 0 18px; min-height: 60px; }
-.list li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 16.5px; }
-.list li b { color: var(--terra); }
-.empty { color: var(--mute); font-size: 16px; padding: 10px 0; }
-.list label { display: grid; gap: 6px; font: 700 13px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--mute); margin-bottom: 14px; }
-.list input, .list select { font: 400 17px/1.4 var(--sans); padding: 12px 13px; border: 1.5px solid #d5c2b3; background: var(--linen); color: var(--cocoa); width: 100%; border-radius: 0; }
-.list input:focus, .list select:focus { outline: 2px solid var(--terra); border-color: var(--terra); }
-.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.dark { background: var(--slate); color: #e9e4da; }
+.dark h2 { color: #fff; } .dark .tag { color: var(--mag-l); } .dark .sh p { color: #b9c1cc; }
+.svc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.svc div { border: 1px solid rgba(236,208,138,.28); border-radius: 4px; padding: 22px; min-width: 0; }
+.svc b { display: block; font: 600 22px/1.1 var(--head); text-transform: uppercase; color: var(--gold-l); margin-bottom: 8px; }
+.svc span { font-size: 15.5px; color: #c9cfd8; }
+.evs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 40px; }
+.ev { position: relative; border-radius: 4px; overflow: hidden; min-height: 220px; min-width: 0; background: var(--slate2); }
+.ev img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
+.ev::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 35%, rgba(16,23,31,.85)); }
+.ev span { position: absolute; left: 16px; bottom: 14px; right: 16px; z-index: 1; color: #fff; font: 600 21px/1.1 var(--head); text-transform: uppercase; }
+.ev.txt { display: grid; place-items: center; text-align: center; padding: 22px; background: repeating-linear-gradient(45deg, #26384a 0 14px, #22323f 14px 28px); border: 1px solid rgba(236,208,138,.4); }
+.ev.txt::after { display: none; }
+.ev.txt span { position: static; }
+.ev.txt small { display: block; font: 500 14.5px/1.4 var(--body); text-transform: none; color: #c9cfd8; margin-top: 8px; }
 
-/* showroom */
-.showroom .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 54px; align-items: center; }
-.showroom figure { margin: 0; position: relative; }
-.showroom figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.showroom figure::after { content: ""; position: absolute; inset: 14px; border: 1px dashed rgba(255,255,255,.6); pointer-events: none; }
-.showroom h2 { font-size: clamp(40px, 4.6vw, 58px); margin: 14px 0 16px; }
-.showroom p { color: var(--mute); margin: 0 0 16px; }
-.shelf { list-style: none; padding: 0; margin: 0 0 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
-.shelf li { display: flex; gap: 10px; align-items: center; font-weight: 600; font-size: 16.5px; }
-.shelf li::before { content: ""; width: 10px; height: 10px; background: var(--peach); flex: none; }
+.how { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; counter-reset: h; }
+.how div { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 22px; min-width: 0; }
+.how div::before { counter-increment: h; content: "0" counter(h); display: block; font: 600 34px/1 var(--head); color: var(--gold); margin-bottom: 10px; }
+.how b { display: block; font: 600 20px/1.1 var(--head); text-transform: uppercase; margin-bottom: 6px; }
+.how span { color: var(--mute); font-size: 15.5px; }
+.faq { margin-top: 36px; display: grid; gap: 10px; max-width: 860px; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 16px 18px; }
+.faq summary { font: 700 17px/1.3 var(--body); cursor: pointer; }
+.faq p { margin: 10px 0 0; color: var(--mute); }
 
-/* reviews */
-.notes { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 24px; align-items: start; }
-.note { margin: 0; background: #fff; padding: 28px 26px 26px; box-shadow: 0 14px 30px rgba(45,31,25,.1); position: relative; }
-.note:nth-child(1) { transform: rotate(-1.2deg); } .note:nth-child(3) { transform: rotate(1.2deg); }
-.note::before { content: ""; position: absolute; top: -9px; left: 24px; width: 60px; height: 18px; background: rgba(240,160,106,.55); }
-.note p { font: italic 500 22px/1.4 var(--serif); margin: 0 0 14px; }
-.note cite { font-style: normal; font-weight: 700; font-size: 14px; color: var(--terra); letter-spacing: .06em; }
+.room .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 44px; align-items: center; }
+.room img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.room h2 { font-size: clamp(34px, 4.2vw, 52px); margin-bottom: 14px; }
+.room p { color: var(--mute); margin: 0 0 12px; }
+.room ul { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 8px; font-size: 16.5px; }
+.room li b { display: block; font: 700 12.5px/1.2 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.room li a { white-space: nowrap; }
+.revs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 50px; }
+.revs p { margin: 0; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 4px; padding: 20px; font-size: 16.5px; }
+.revs b { display: block; color: var(--gold); letter-spacing: 2px; margin-bottom: 6px; }
 
-footer { background: var(--cocoa); color: #e8d8cd; padding-block: 50px 110px; }
-footer .wrap { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; align-items: flex-end; }
-footer b { display: block; font: italic 500 34px/1 var(--serif); color: #fff; margin-bottom: 10px; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100%); z-index: 60; background: var(--paper); box-shadow: -20px 0 50px rgba(0,0,0,.25); transform: translateX(105%); transition: transform .3s ease; display: flex; flex-direction: column; visibility: hidden; }
+.drawer.open { transform: none; visibility: visible; }
+.dhead { background: var(--slate); color: var(--gold-l); padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--mag); }
+.dhead b { font: 600 22px/1 var(--head); text-transform: uppercase; }
+.dhead button { width: 40px; height: 40px; border: 0; background: rgba(255,255,255,.08); color: #fff; font: 700 22px/1 var(--body); border-radius: 3px; cursor: pointer; }
+.dbody { padding: 18px; overflow: auto; flex: 1; }
+.qlist { list-style: none; padding: 0; margin: 0 0 16px; }
+.qlist li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px dashed var(--line); font-size: 16px; }
+.qlist li b { color: var(--mag); white-space: nowrap; }
+.qlist .x { border: 0; background: none; color: var(--mute); cursor: pointer; font-size: 18px; padding: 0 4px; }
+.qlist .empty { color: var(--mute); font-size: 15.5px; border: 0; }
+.f { display: grid; gap: 6px; font: 700 12.5px/1 var(--body); letter-spacing: .1em; text-transform: uppercase; color: var(--mute); margin-bottom: 12px; min-width: 0; }
+.f input, .f select { font: 400 17px/1.4 var(--body); text-transform: none; letter-spacing: 0; padding: 12px; border: 1.5px solid #d8d1c3; border-radius: 3px; background: #fff; color: var(--ink); width: 100%; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.err { display: none; color: var(--mag); font-weight: 700; font-size: 15px; margin: 0 0 10px; }
+.err.show { display: block; }
+
+footer { background: #10171f; color: #c9cfd8; border-top: 3px solid var(--gold); padding-block: 44px 110px; font-size: 15.5px; }
+footer .wrap { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 26px; }
+footer b { display: block; font: 600 26px/1 var(--head); text-transform: uppercase; color: var(--gold-l); margin-bottom: 10px; }
+footer h3 { font-size: 15px; color: #fff; letter-spacing: .1em; margin-bottom: 8px; }
 footer a { color: #fff; }
-
-/* mobile list bar */
-.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; background: var(--cocoa); color: #fff; padding: 10px max(14px, env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)); align-items: center; gap: 12px; }
-.bar .count { flex: 1; font-weight: 600; font-size: 16px; line-height: 1.3; }
-.bar .count small { display: block; color: #d8c4b8; font-weight: 500; font-size: 13.5px; }
-.bar a.call { color: #fff; border: 1px solid rgba(255,255,255,.5); padding: 12px 14px; text-decoration: none; font-weight: 700; font-size: 15px; }
-.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+footer p { margin: 0 0 6px; overflow-wrap: anywhere; }
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; gap: 8px; background: #10171f; border-top: 2px solid var(--gold); padding: 10px max(12px, env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)); }
+.bar a, .bar button { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font: 700 16px/1 var(--body); padding: 14px 10px; border-radius: 3px; text-decoration: none; border: 0; cursor: pointer; }
+.bar .c { background: transparent; color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.4); }
+.bar .q { background: linear-gradient(180deg, var(--gold-l), var(--gold)); color: var(--slate); }
+.rv { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
 .rv.in { opacity: 1; transform: none; }
 
-@media (max-width: 1000px) {
-  .top nav { display: none; } .menu-btn { display: inline-flex; }
-  .hero .wrap, .showroom .wrap, .builder { grid-template-columns: 1fr; }
-  .board { height: 520px; max-width: 620px; width: 100%; margin: 0 auto; }
-  .looks { grid-template-columns: 1fr 1fr; }
-  .notes { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
-  .list { position: static; }
+@media (max-width: 1040px) {
+  .top nav { display: none; } .ham { display: inline-flex; }
+  .hero .wrap, .room .wrap { grid-template-columns: minmax(0, 1fr); }
+  .pics { min-height: 0; aspect-ratio: 5 / 4; max-width: 620px; width: 100%; }
+  .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .shopg { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .side { position: static; display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px; margin-inline: -20px; padding: 2px 20px 6px; scrollbar-width: none; }
+  .side button { flex: none; border: 1px solid var(--line); border-radius: 3px; padding: 10px 13px; background: #fff; }
+  .side button[aria-pressed="true"] { background: var(--slate); color: var(--gold-l); border-color: var(--slate); }
+  .items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .looks, .revs { grid-template-columns: minmax(0, 1fr); }
+  .svc, .evs, .how { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  footer .wrap { grid-template-columns: minmax(0, 1fr); }
   .bar { display: flex; }
 }
 @media (max-width: 640px) {
-  section { padding-block: 68px; }
-  .hero .wrap { padding-block: 40px 60px; gap: 40px; }
-  .hero h1 { font-size: 46px; }
-  .hero p { font-size: 18.5px; }
+  .brand b { font-size: 19px; } .brand small { letter-spacing: .14em; font-size: 9.5px; }
+  .qbtn .lbl { display: none; } .qbtn { padding: 11px 10px; }
+  .hero h1 { font-size: 38px; } .hero p { font-size: 17px; }
   .ctas .btn { flex: 1 1 100%; }
-  .board { height: 400px; }
-  .p1 { width: 64%; height: 70%; } .p2 { width: 54%; height: 50%; } .p3 { width: 50%; height: 46%; right: 2%; }
-  .swatches i { width: 30px; height: 44px; }
-  .looks, .items, .shelf, .row2 { grid-template-columns: 1fr; }
-  .look .ph { aspect-ratio: 4 / 3.6; }
-  .brand b { font-size: 25px; }
-  .note:nth-child(n) { transform: none; }
-  .strip .wrap { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .items { grid-template-columns: minmax(0, 1fr); }
+  .item { flex-direction: row; } .item img { width: 36%; aspect-ratio: auto; object-fit: cover; }
+  .item .in { padding: 12px; }
+  .svc, .evs, .how { grid-template-columns: minmax(0, 1fr); }
+  .cat span { font-size: 17px; }
 }
+@media (max-width: 380px) { .cats { gap: 8px; } .cat span { font-size: 15px; left: 10px; } .brand img { width: 36px; height: 36px; } .brand b { font-size: 17px; } .step button { width: 32px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
 </style>
 <style>body{margin:0}</style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 8h14l-1.2 12H6.2zM9 8V6a3 3 0 016 0v2"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 000-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.7 11.7 0 004.5 4c1.7.7 2.3.7 3.1.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+</defs></svg>
+
 <div class="demo">Demo website made for Pretty Woman Events &amp; Rentals. Items and prices to be confirmed by you.</div>
 
 <header class="top"><div class="wrap">
-  <a class="brand" href="#top" aria-label="Pretty Woman Events and Rentals home"><b>Pretty Woman</b><small>Events &amp; Rentals</small></a>
-  <nav aria-label="Primary"><a href="#looks">The looks</a><a href="#showroom">Showroom</a><a href="#reviews">Reviews</a><a class="btn small" href="#build">Build your table</a></nav>
-  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="drop"><i><b></b><b></b><b></b></i>Menu</button>
+  <a class="brand" href="#top" aria-label="Pretty Woman Events and Rentals home"><img src="img/pw-crest.webp" alt="" width="46" height="46"><span><b class="gold">Pretty Woman</b><small>Events &amp; Rentals</small></span></a>
+  <nav aria-label="Primary"><a href="#rentals">Rentals</a><a href="#looks">Looks</a><a href="#services">Services</a><a href="#showroom">Showroom</a><a href="#faq">FAQ</a></nav>
+  <div class="right">
+    <button class="qbtn" type="button" data-open-quote aria-label="Open your quote list"><svg aria-hidden="true"><use href="#bag"/></svg><span class="lbl">Quote</span><span class="n" data-count>0</span></button>
+    <button class="ham" type="button" id="ham" aria-label="Menu" aria-expanded="false" aria-controls="drop"><i><b></b><b></b><b></b></i></button>
+  </div>
 </div></header>
 <div class="scrim" id="scrim"></div>
-<nav class="drop" id="drop" aria-label="Menu"><a href="#looks">The looks</a><a href="#build">Build your table</a><a href="#showroom">Showroom</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<nav class="drop" id="drop" aria-label="Menu"><a href="#rentals">Rentals</a><a href="#looks">Shop by look</a><a href="#services">Services</a><a href="#events">Events</a><a href="#showroom">Showroom</a><a href="#faq">FAQ</a></nav>
 
 <div class="hero" id="top"><div class="wrap">
   <div>
-    <span class="label rv">Décor &amp; party rentals · Accra</span>
-    <h1 class="rv">Tables your guests will <em>photograph.</em></h1>
-    <p class="rv">Styled tablescapes, canopies, draping, chairs, glassware and florals for weddings, birthdays and life celebrations, from one showroom.</p>
-    <div class="ctas rv"><a class="btn" href="#build">Build your table</a><a class="btn soft" href="#looks">See the looks</a></div>
+    <img class="plaque rv" src="img/pw-sign.webp" alt="Pretty Woman Events &amp; Rentals gold crest sign" width="466" height="290">
+    <span class="tag rv">Event rental · planning · décor · styling</span>
+    <h1 class="rv">Event rentals &amp; décor <span class="gold">in East Legon</span></h1>
+    <p class="rv">Tents, draping, tables, throne chairs, chargers, glassware and florals for weddings, traditional ceremonies and birthdays. Pick what you need and get your quote on WhatsApp.</p>
+    <div class="ctas rv"><a class="btn" href="#rentals">Browse rentals</a><a class="btn out" href="#showroom">Visit the showroom</a></div>
+    <div class="chips rv"><span><b>4.3 ★</b> 40 Google reviews</span><span>Showroom in East Legon</span><span>Setup &amp; styling</span></div>
   </div>
-  <div class="board rv" aria-label="Mood board of Pretty Woman tablescapes">
-    <figure class="print p1"><img src="img/blush-close.webp" alt="Blush and coral florals on a long table with gold-rimmed plates"><span>Blush &amp; coral</span></figure>
-    <figure class="print p2"><img src="img/canopy.webp" alt="Draped garden canopy over a long wooden table on the lawn"><span>Garden canopy</span></figure>
-    <figure class="print p3"><img src="img/navy-throne.webp" alt="White throne chair beside a navy table with mirrored trays"><span>Navy &amp; silver</span></figure>
-    <div class="swatches" aria-hidden="true"><i style="background:#b9471f"></i><i style="background:#f1d2c7"></i><i style="background:#f0a06a"></i><i style="background:#84552f"></i><i style="background:#66804f"></i></div>
-  </div>
+  <div class="pics rv" aria-hidden="true"><img class="a" src="img/c/hero-a.webp" alt="" width="1200" height="800"><img class="b" src="img/c/hero-b.webp" alt="" width="900" height="918"></div>
 </div></div>
 
-<div class="strip"><div class="wrap">
-  <span><b>Weddings</b> · birthdays · life celebrations</span>
-  <span>Showroom on <b>Shamo Kwei Avenue</b></span>
-  <span><b>4.3 ★</b> from 40 Google reviews</span>
-</div></div>
+<section id="rentals"><div class="wrap">
+  <div class="sh rv"><div><span class="tag">Rental catalog</span><h2>What would you like to rent?</h2></div><p>Choose a category, add items to your quote list, then send it to us on WhatsApp with your date and venue.</p></div>
+  <div class="cats" id="cats"></div>
+</div></section>
+
+<section class="shop" id="catalog"><div class="wrap">
+  <div class="sh rv"><div><span class="tag">Add to quote</span><h2>Rentals</h2></div><p>Prices depend on quantity, date and venue, so every item is priced in your quote.</p></div>
+  <div class="shopg">
+    <div class="side" id="side" role="group" aria-label="Rental categories"></div>
+    <div><div class="items" id="items"></div><p class="note">Don't see something? Add a note in your quote. Our showroom has more than we can show here.</p></div>
+  </div>
+</div></section>
 
 <section id="looks"><div class="wrap">
-  <div class="head rv"><span class="label">The lookbook</span><h2>Pick a look. <em>We'll style it.</em></h2><p>A few of the tables we've dressed. Choose one as your starting point, then change the colours to suit your day.</p></div>
-  <div class="looks">
-    <article class="look rv"><div class="ph"><img src="img/garden.webp" alt="Long wooden tables under a blush canopy on a garden lawn" loading="lazy" style="object-position:50% 50%"></div><div class="body">
-      <div class="chips" aria-label="Colours: terracotta, blush, walnut, sage"><i style="background:#b9471f"></i><i style="background:#f1d2c7"></i><i style="background:#84552f"></i><i style="background:#66804f"></i></div>
-      <h3>Terracotta Garden</h3><p>Open-air canopy, walnut cross-back chairs, terracotta napkins and coral florals on the lawn.</p>
-      <a class="btn soft" href="#build" data-look="Terracotta Garden">Start with this look</a></div></article>
-    <article class="look rv"><div class="ph"><img src="img/blush-long.webp" alt="White hall with blush draping and long tables with peach florals" loading="lazy"></div><div class="body">
-      <div class="chips" aria-label="Colours: blush, peach, gold, ivory"><i style="background:#f1d2c7"></i><i style="background:#f0a06a"></i><i style="background:#c9a35a"></i><i style="background:#fbf7f2"></i></div>
-      <h3>Blush &amp; Gold</h3><p>Soft blush draping overhead, gold-rimmed glassware and long rows of peach and white blooms.</p>
-      <a class="btn soft" href="#build" data-look="Blush &amp; Gold">Start with this look</a></div></article>
-    <article class="look rv"><div class="ph"><img src="img/navy-table.webp" alt="Navy table with pink florals, mirrored trays and crystal glassware" loading="lazy" style="object-position:40% 50%"></div><div class="body">
-      <div class="chips" aria-label="Colours: navy, silver, blush, green"><i style="background:#1e2c4f"></i><i style="background:#c9ccd3"></i><i style="background:#f1c4c9"></i><i style="background:#4e6b3a"></i></div>
-      <h3>Navy &amp; Silver</h3><p>Deep navy linen, mirrored trays, crystal stemware and a white throne chair for the celebrant.</p>
-      <a class="btn soft" href="#build" data-look="Navy &amp; Silver">Start with this look</a></div></article>
+  <div class="sh rv"><div><span class="tag">Shop by look</span><h2>Start from a table we've styled</h2></div><p>Tap a look to add its rental set to your quote. You can change anything after.</p></div>
+  <div class="looks" id="lookgrid"></div>
+</div></section>
+
+<section class="dark" id="services"><div class="wrap">
+  <div class="sh rv"><div><span class="tag">Services</span><h2>More than rentals</h2></div><p>As our sign says: event rental, planning, décor and styling, from one team.</p></div>
+  <div class="svc">
+    <div class="rv"><b>Event rental</b><span>Tents, draping, tables, chairs, tableware and décor from our showroom.</span></div>
+    <div class="rv"><b>Event planning</b><span>Help putting the day together, from layout to the colour story.</span></div>
+    <div class="rv"><b>Décor</b><span>Flower centrepieces, backdrops, candles and lighting.</span></div>
+    <div class="rv"><b>Styling</b><span>We dress the tables and the space so it looks like the picture.</span></div>
+  </div>
+  <div class="evs" id="events">
+    <div class="ev rv"><img src="img/blush-long.webp" alt="Wedding reception with blush draping and long tables" loading="lazy"><span>Weddings</span></div>
+    <div class="ev txt rv"><span>Traditional &amp; engagements<small>Throne chairs, rich colours and gold for the big day.</small></span></div>
+    <div class="ev rv"><img src="img/navy-throne.webp" alt="Celebrant throne chair at a navy table" loading="lazy"><span>Birthdays &amp; celebrants</span></div>
+    <div class="ev rv"><img src="img/garden-wide.webp" alt="Garden party with white canopies on a lawn" loading="lazy"><span>Garden parties</span></div>
   </div>
 </div></section>
 
-<section class="build" id="build"><div class="wrap">
-  <div class="head rv"><span class="label">Build your table</span><h2>Make your <em>rental list.</em></h2><p>Tap + on everything you need. We'll reply on WhatsApp with availability and a quote.</p></div>
-  <div class="builder">
-    <div class="cats" id="cats"></div>
-    <aside class="list rv" aria-label="Your rental list">
-      <div class="tagline" id="lookline">Your list</div>
-      <div class="in">
-        <ul id="sel"><li class="empty">Nothing added yet. Tap + on an item.</li></ul>
-        <form id="form">
-          <div class="row2">
-            <label>Event<select name="type"><option>Wedding</option><option>Birthday</option><option>Life celebration</option><option>Engagement</option><option>Baby shower / naming</option><option>Corporate event</option><option>Other</option></select></label>
-            <label>Date<input type="date" name="date" required></label>
-          </div>
-          <div class="row2">
-            <label>Guests<input type="number" name="guests" min="1" inputmode="numeric" placeholder="e.g. 120"></label>
-            <label>Venue / area<input name="area" placeholder="e.g. East Legon"></label>
-          </div>
-          <label>Your name<input name="name" autocomplete="name" required></label>
-          <button class="btn" type="submit" style="width:100%">Send list on WhatsApp</button>
-        </form>
-      </div>
-    </aside>
+<section id="how"><div class="wrap">
+  <div class="sh rv"><div><span class="tag">How it works</span><h2>From list to setup</h2></div></div>
+  <div class="how">
+    <div class="rv"><b>Pick</b><span>Add rentals or a look to your quote list, here or at the showroom.</span></div>
+    <div class="rv"><b>Quote</b><span>Send it on WhatsApp with your date, venue and guest count.</span></div>
+    <div class="rv"><b>Confirm</b><span>We confirm availability and your price, and book your date.</span></div>
+    <div class="rv"><b>Set up</b><span>Delivery and styling are arranged with your quote.</span></div>
+  </div>
+  <div class="faq" id="faq">
+    <details class="rv"><summary>How much do the rentals cost?</summary><p>It depends on the items, quantity, date and venue. Send your list and we'll give you a full quote.</p></details>
+    <details class="rv"><summary>Can I see the items before I book?</summary><p>Yes. Visit our showroom in East Legon. Call ahead so someone can walk you through.</p></details>
+    <details class="rv"><summary>Do you deliver and set up?</summary><p>Tell us your venue when you send your list, and delivery and setup will be included in your quote.</p></details>
+    <details class="rv"><summary>How early should I book?</summary><p>As early as you can, especially for weekend weddings. Send your date and we'll check availability.</p></details>
   </div>
 </div></section>
 
-<section class="showroom" id="showroom"><div class="wrap">
-  <figure class="rv"><img src="img/showroom.webp" alt="Pretty Woman Events &amp; Rentals storefront at night with balloon garland and shelves of glassware inside" loading="lazy"></figure>
+<section class="room" id="showroom" style="padding-top:0"><div class="wrap">
+  <img class="rv" src="img/showroom.webp" alt="Pretty Woman Events &amp; Rentals showroom entrance with balloon garland and shelves of glassware" loading="lazy">
   <div class="rv">
-    <span class="label">The showroom</span>
-    <h2>Come and <em>touch the linen.</em></h2>
-    <p>See and choose your pieces in person at our showroom on Shamo Kwei Avenue, from shelves of glassware to chargers, cutlery and statement chairs.</p>
-    <ul class="shelf"><li>Crystal &amp; gold-rim glassware</li><li>Chargers &amp; dinnerware</li><li>Gold cutlery</li><li>Throne &amp; accent chairs</li><li>Candle holders &amp; stands</li><li>Chandeliers &amp; lighting</li></ul>
-    <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Pretty%20Woman%20Event%20%26%20Rentals%2C%20Shamo%20Kwei%20Ave%2C%20Accra" target="_blank" rel="noopener">Get directions</a>
+    <span class="tag">The showroom</span>
+    <h2>Come and see it <span style="color:var(--gold-t)">in person</span></h2>
+    <p>Glassware, chargers, cutlery, chairs, candle holders and more, ready to touch and choose.</p>
+    <ul>
+      <li><b>Address</b>Shamo Quaye Avenue, First Block Factory, Adjiringano Road, East Legon, Accra</li>
+      <li><b>Call</b><a href="tel:+233243536689">024 353 6689</a> · <a href="tel:+233200951639">020 095 1639</a> · <a href="tel:+233264205457">026 420 5457</a></li>
+    </ul>
+    <div class="ctas"><a class="btn dark" href="https://www.google.com/maps/search/Pretty+Woman+Events+Rentals+East+Legon" target="_blank" rel="noopener">Get directions</a><a class="btn" href="https://wa.me/233243536689?text=Hello%20Pretty%20Woman%2C%20I%27d%20like%20to%20visit%20the%20showroom." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Book a visit</a></div>
   </div>
-</div></section>
+</div>
+<div class="wrap"><div class="revs">
+  <p class="rv"><b>★★★★★</b>"Wanna plan a wedding, birthday or life celebration party? Look no where, Pretty Woman is the best choice."</p>
+  <p class="rv"><b>★★★★★</b>"Great service."</p>
+  <p class="rv"><b>★★★★</b>"Never a dull moment."</p>
+</div></div></section>
 
-<section id="reviews" style="padding-top:0"><div class="wrap">
-  <div class="head rv"><span class="label">Kind words</span><h2>From our <em>clients.</em></h2></div>
-  <div class="notes">
-    <figure class="note rv"><p>"Wanna plan a wedding, birthday or life celebration party? Look no where, Pretty Woman is the best choice."</p><cite>GOOGLE REVIEW ★★★★★</cite></figure>
-    <figure class="note rv"><p>"Great service."</p><cite>GOOGLE REVIEW ★★★★★</cite></figure>
-    <figure class="note rv"><p>"Never a dull moment."</p><cite>GOOGLE REVIEW ★★★★</cite></figure>
-  </div>
-</div></section>
-
-<footer id="contact"><div class="wrap">
-  <div><b>Pretty Woman</b>Events &amp; Rentals · Shamo Kwei Avenue, Accra<br>Call or WhatsApp <a href="tel:+233243536689">024 353 6689</a></div>
-  <a class="btn" href="#build">Build your table</a>
+<footer><div class="wrap">
+  <div><b>Pretty Woman</b>Events &amp; Rentals<br>Event rental · planning · décor · styling</div>
+  <div><h3>Visit</h3><p>Shamo Quaye Avenue, First Block Factory, Adjiringano Road, East Legon, Accra</p></div>
+  <div><h3>Contact</h3><p><a href="tel:+233243536689">024 353 6689</a></p><p><a href="mailto:prettybabe49@yahoo.com">prettybabe49@yahoo.com</a></p><p>Facebook &amp; Instagram: Pretty Woman Events</p></div>
 </div></footer>
 
-<div class="bar" id="bar"><div class="count" id="barCount">Your list is empty<small>Tap + to add rentals</small></div><a class="call" href="tel:+233243536689">Call</a><a class="btn small" href="#build" id="barGo">View list</a></div>
+<div class="bar"><a class="c" href="tel:+233243536689">Call</a><button class="q" type="button" data-open-quote><svg aria-hidden="true" style="width:18px;height:18px"><use href="#bag"/></svg><span>Quote (<span data-count>0</span>)</span></button></div>
+
+<aside class="drawer" id="drawer" aria-label="Your quote list">
+  <div class="dhead"><b>Your quote list</b><button type="button" id="dclose" aria-label="Close quote list">×</button></div>
+  <div class="dbody">
+    <ul class="qlist" id="qlist"></ul>
+    <form id="qform" novalidate>
+      <div class="two">
+        <label class="f">Event<select name="type"><option>Wedding</option><option>Traditional / engagement</option><option>Birthday</option><option>Life celebration</option><option>Baby shower / naming</option><option>Corporate event</option><option>Other</option></select></label>
+        <label class="f">Date<input type="date" name="date"></label>
+      </div>
+      <div class="two">
+        <label class="f">Guests<input type="number" name="guests" min="1" inputmode="numeric" placeholder="e.g. 150"></label>
+        <label class="f">Venue / area<input name="area" placeholder="e.g. East Legon"></label>
+      </div>
+      <label class="f">Your name<input name="name" autocomplete="name"></label>
+      <label class="f">Anything else<input name="note" placeholder="Colours, setup time, extra items"></label>
+      <p class="err" id="qerr" role="alert"></p>
+      <button class="btn" type="submit" style="width:100%"><svg aria-hidden="true"><use href="#wa"/></svg>Send quote request</button>
+    </form>
+  </div>
+</aside>
 
 <script>
 (() => {
   const WA = '233243536689';
-  const CATS = {
-    'Seating & tables': ['Cross-back chairs', 'Chiavari chairs', 'Throne chair', 'Long banquet tables', 'Round tables'],
-    'Linen & draping': ['Table linen', 'Napkins', 'Ceiling / wall draping', 'Chair sashes'],
-    'Table settings': ['Chargers', 'Dinner plates', 'Gold cutlery sets', 'Wine & water glasses', 'Champagne flutes'],
-    'Décor & cover': ['Floral centrepieces', 'Candle holders', 'Canopy / tent', 'Flower wall / backdrop', 'Lighting & chandeliers']
+  const CATS = [
+    { id: 'tents', name: 'Tents & canopies', img: 'tents', items: [['Canopy tent', 'Open-sided canopy for garden events', 1], ['Draped canopy', 'Canopy with white or blush drapes', 1], ['Long-table canopy', 'Covers a long banquet row', 1]] },
+    { id: 'draping', name: 'Draping', img: 'draping', items: [['Ceiling draping', 'Soft swags in blush, white or gold', 1], ['Wall / backdrop draping', 'Clean backdrop for the high table', 1], ['Entrance draping', 'Frame the doorway and aisle', 1]] },
+    { id: 'tables', name: 'Tables & linen', img: 'tables', items: [['Long banquet table', 'Seats 8 to 10 per table', 1], ['Table linen', 'Gold, ivory, navy and more', 5], ['Napkins', 'Coloured or white, folded', 10]] },
+    { id: 'seating', name: 'Seating & thrones', img: 'seating', items: [['Throne chair', 'For the celebrant or couple', 1], ['Cross-back chair', 'Wooden, for garden tables', 10], ['Chiavari chair', 'Classic banquet chair', 10]] },
+    { id: 'tableware', name: 'Chargers & tableware', img: 'tableware', items: [['Gold charger plates', 'Gold rim, under the dinner plate', 10], ['Dinner plates', 'White china', 10], ['Gold cutlery set', 'Knife, fork and spoon', 10]] },
+    { id: 'glassware', name: 'Glassware', img: 'glassware', items: [['Wine glasses', 'Clear crystal', 10], ['Gold champagne flutes', 'Gold-tone flutes', 10], ['Water goblets', 'Clear or coloured', 10]] },
+    { id: 'florals', name: 'Florals & centrepieces', img: 'florals', items: [['Floral centrepiece', 'Low or tall, in your colours', 1], ['Flower runner', 'Blooms along a long table', 1], ['Flower wall / backdrop', 'Photo backdrop for the day', 1]] },
+    { id: 'candles', name: 'Candles & lighting', img: 'candles', items: [['Floating candle set', 'Glass cylinders with candles', 5], ['Candle holders', 'Gold and glass', 5], ['Chandelier / fairy lights', 'For canopies and halls', 1]] }
+  ];
+  const LOOKS = [
+    { name: 'Blush & Gold', img: 'blush-long', sw: ['#f6d7d0', '#e8a07a', '#c9a24a', '#fbf7f2'], text: 'Blush ceiling draping, gold-rim glassware and long rows of peach and white blooms.', set: [['Ceiling draping', 1], ['Long banquet table', 6], ['Gold charger plates', 60], ['Gold champagne flutes', 60], ['Floral centrepiece', 6]] },
+    { name: 'Garden Canopy', img: 'garden', sw: ['#b9471f', '#f1d2c7', '#84552f', '#66804f'], text: 'Draped canopy on the lawn, wooden cross-back chairs, terracotta napkins and coral florals.', set: [['Draped canopy', 1], ['Long banquet table', 4], ['Cross-back chair', 40], ['Napkins', 40], ['Flower runner', 4]] },
+    { name: 'Navy & Silver', img: 'navy-table', sw: ['#1e2c4f', '#c9ccd3', '#f1c4c9', '#4e6b3a'], text: 'Navy linen, mirrored trays, crystal glassware and a white throne chair for the celebrant.', set: [['Throne chair', 1], ['Table linen', 5], ['Wine glasses', 50], ['Floral centrepiece', 5], ['Floating candle set', 5]] }
+  ];
+  const all = {}; CATS.forEach(c => c.items.forEach(([n, d, s]) => all[n] = { cat: c.id, step: s }));
+  const q = {}; let lookName = '';
+  const $ = id => document.getElementById(id);
+  const slug = n => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  $('cats').innerHTML = CATS.map(c => '<button type="button" class="cat rv" data-go="' + c.id + '"><img src="img/c/' + c.img + '.webp" alt="" loading="lazy"><span>' + c.name + '<small>' + c.items.length + ' items · add to quote</small></span></button>').join('');
+  $('side').innerHTML = '<button type="button" data-c="all" aria-pressed="true">All rentals</button>' + CATS.map(c => '<button type="button" data-c="' + c.id + '" aria-pressed="false">' + c.name + '</button>').join('');
+  $('items').innerHTML = CATS.map(c => c.items.map(([n, d, s]) => '<article class="item" data-c="' + c.id + '" data-n="' + n + '"><img src="img/i/' + slug(n) + '.webp" alt="' + n + '" loading="lazy"><div class="in"><h3>' + n + '</h3><p>' + d + '</p><div class="price">Price on request</div><div class="qty"><div class="step"><button type="button" data-d="-1" aria-label="Fewer ' + n + '">−</button><output>' + s + '</output><button type="button" data-d="1" aria-label="More ' + n + '">+</button></div><button type="button" class="add">Add to quote</button></div></div></article>').join('')).join('');
+  const filter = id => {
+    document.querySelectorAll('#side button').forEach(b => b.setAttribute('aria-pressed', b.dataset.c === id));
+    document.querySelectorAll('.item').forEach(i => { i.hidden = id !== 'all' && i.dataset.c !== id; });
   };
-  const q = {}; let look = '';
-  const cats = document.getElementById('cats');
-  Object.entries(CATS).forEach(([c, items]) => {
-    const d = document.createElement('div'); d.className = 'cat rv';
-    d.innerHTML = '<h3>' + c + '</h3><div class="items">' + items.map(n => '<div class="item" data-n="' + n + '"><span>' + n + '</span><div class="step"><button type="button" data-d="-1" aria-label="Remove one ' + n + '">−</button><output aria-live="polite">0</output><button type="button" data-d="1" aria-label="Add one ' + n + '">+</button></div></div>').join('') + '</div>';
-    cats.appendChild(d);
-  });
-  const sel = document.getElementById('sel'), barCount = document.getElementById('barCount'), lookline = document.getElementById('lookline');
+  $('side').addEventListener('click', e => { const b = e.target.closest('button'); if (b) filter(b.dataset.c); });
+  $('cats').addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (!b) return; filter(b.dataset.go); $('catalog').scrollIntoView({ behavior: 'smooth' }); });
+  $('lookgrid').innerHTML = LOOKS.map((l, i) => '<article class="look rv"><img src="img/' + l.img + '.webp" alt="' + l.name + ' table styled by Pretty Woman" loading="lazy"><div class="in"><div class="sw">' + l.sw.map(c => '<i style="background:' + c + '"></i>').join('') + '</div><h3>' + l.name + '</h3><p>' + l.text + '</p><button type="button" class="btn dark" data-look="' + i + '">Add this look to my quote</button></div></article>').join('');
   const render = () => {
-    const picked = Object.entries(q).filter(([, v]) => v > 0);
-    sel.innerHTML = picked.length ? picked.map(([n, v]) => '<li><span>' + n + '</span><b>× ' + v + '</b></li>').join('') : '<li class="empty">Nothing added yet. Tap + on an item.</li>';
-    document.querySelectorAll('.item').forEach(it => { const v = q[it.dataset.n] || 0; it.querySelector('output').textContent = v; it.classList.toggle('on', v > 0); });
-    const total = picked.length;
-    barCount.innerHTML = total ? total + ' item' + (total > 1 ? 's' : '') + ' on your list<small>' + (look ? look + ' look' : 'Ready to send') + '</small>' : 'Your list is empty<small>Tap + to add rentals</small>';
-    lookline.textContent = look ? 'Your list · ' + look : 'Your list';
+    const picked = Object.entries(q);
+    document.querySelectorAll('[data-count]').forEach(el => el.textContent = picked.length);
+    $('qlist').innerHTML = picked.length ? picked.map(([n, v]) => '<li><span>' + n + '</span><span><b>× ' + v + '</b> <button type="button" class="x" data-rm="' + n + '" aria-label="Remove ' + n + '">×</button></span></li>').join('') : '<li class="empty">Your list is empty. Add rentals or a look.</li>';
+    document.querySelectorAll('.item').forEach(it => { const on = q[it.dataset.n] != null; const a = it.querySelector('.add'); a.classList.toggle('on', on); a.textContent = on ? 'Added ✓' : 'Add to quote'; });
   };
-  cats.addEventListener('click', e => {
-    const b = e.target.closest('button[data-d]'); if (!b) return;
-    const n = b.closest('.item').dataset.n, step = n.includes('chair') || n.includes('glasses') || n.includes('flutes') || n.includes('plates') || n.includes('Chargers') || n.includes('cutlery') || n.includes('Napkins') ? 10 : 1;
-    const v = Math.max(0, (q[n] || 0) + Number(b.dataset.d) * (n === 'Throne chair' ? 1 : step));
-    q[n] = v; render();
+  $('items').addEventListener('click', e => {
+    const it = e.target.closest('.item'); if (!it) return;
+    const n = it.dataset.n, out = it.querySelector('output'), s = all[n].step;
+    const d = e.target.closest('[data-d]');
+    if (d) { const v = Math.max(s, Number(out.textContent) + Number(d.dataset.d) * s); out.textContent = v; if (q[n] != null) q[n] = v; render(); return; }
+    if (e.target.closest('.add')) { if (q[n] != null) delete q[n]; else q[n] = Number(out.textContent); render(); }
   });
-  document.querySelectorAll('[data-look]').forEach(a => a.addEventListener('click', () => { look = a.dataset.look.replace('&amp;', '&'); render(); }));
-  render();
-
-  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .06 }) : null;
-  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
-  const btn = document.getElementById('menuBtn'), drop = document.getElementById('drop'), scrim = document.getElementById('scrim'), head = document.querySelector('header.top');
-  const close = () => { drop.classList.remove('open'); scrim.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
-  btn.onclick = () => { const o = !drop.classList.contains('open'); drop.style.top = head.getBoundingClientRect().bottom + 'px'; drop.classList.toggle('open', o); scrim.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); };
-  scrim.onclick = close; drop.querySelectorAll('a').forEach(a => a.onclick = close);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-  // on phones, "View list" jumps to the list itself
-  document.getElementById('barGo').addEventListener('click', e => { e.preventDefault(); document.querySelector('.list').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
-
-  const f = document.getElementById('form');
-  f.date.min = new Date().toISOString().slice(0, 10);
+  const dr = $('drawer');
+  const openQ = name => { if (name) lookName = name; dr.classList.add('open'); setTimeout(() => $('dclose').focus(), 50); };
+  const closeQ = () => dr.classList.remove('open');
+  $('lookgrid').addEventListener('click', e => { const b = e.target.closest('[data-look]'); if (!b) return; const l = LOOKS[b.dataset.look]; l.set.forEach(([n, v]) => q[n] = v); render(); openQ(l.name); });
+  $('qlist').addEventListener('click', e => { const b = e.target.closest('[data-rm]'); if (b) { delete q[b.dataset.rm]; render(); } });
+  document.querySelectorAll('[data-open-quote]').forEach(b => b.onclick = () => openQ());
+  $('dclose').onclick = closeQ;
+  const f = $('qform'); f.date.min = new Date().toISOString().slice(0, 10);
   f.addEventListener('submit', e => {
     e.preventDefault();
-    const picked = Object.entries(q).filter(([, v]) => v > 0);
+    const picked = Object.entries(q), err = $('qerr');
+    if (!picked.length) { err.textContent = 'Add at least one rental or a look first.'; err.classList.add('show'); return; }
+    if (!f.name.value.trim() || !f.date.value) { err.textContent = 'Please add your name and event date.'; err.classList.add('show'); return; }
+    err.classList.remove('show');
     const d = new Date(f.date.value + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
     let m = 'Hello Pretty Woman Events & Rentals! I would like a quote.\n\nEvent: ' + f.type.value + '\nDate: ' + d;
     if (f.guests.value) m += '\nGuests: ' + f.guests.value;
     if (f.area.value) m += '\nVenue / area: ' + f.area.value;
-    if (look) m += '\nLook I like: ' + look;
-    m += '\n\nMy list:\n' + (picked.length ? picked.map(([n, v]) => '- ' + n + ' x ' + v).join('\n') : '- (not sure yet, please advise)');
-    m += '\n\nName: ' + f.name.value + '\nThank you!';
+    if (lookName) m += '\nLook I like: ' + lookName;
+    m += '\n\nMy list:\n' + picked.map(([n, v]) => '- ' + n + ' x ' + v).join('\n');
+    if (f.note.value.trim()) m += '\n\nNote: ' + f.note.value.trim();
+    m += '\n\nName: ' + f.name.value.trim() + '\nThank you!';
     window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(m), '_blank', 'noopener');
   });
+  render();
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .06 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+  const ham = $('ham'), drop = $('drop'), scrim = $('scrim'), head = document.querySelector('header.top');
+  const shut = () => { drop.classList.remove('open'); scrim.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); };
+  ham.onclick = () => { const o = !drop.classList.contains('open'); drop.style.top = head.getBoundingClientRect().bottom + 'px'; drop.classList.toggle('open', o); scrim.classList.toggle('open', o); ham.setAttribute('aria-expanded', o); };
+  scrim.onclick = shut; drop.querySelectorAll('a').forEach(a => a.onclick = shut);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { shut(); closeQ(); } });
 })();
 </script>
 
 <!-- jb-credit -->
-<div class="jb-credit" style="all:revert;display:block;margin:0;padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px));background:#111;color:#cfcfcf;font:500 13px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;text-align:center;position:relative;z-index:1">Website designed by <b style="color:#fff">Joseph Bortey</b> · <a href="tel:+233265768743" style="color:#fff;text-decoration:underline">026 576 8743</a></div>
+<div class="jb-credit" style="all:revert;display:block;margin:0;padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px));background:#111;color:#cfcfcf;font:500 13px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;text-align:center;position:relative;z-index:1">Website designed by <b style="color:#fff;white-space:nowrap">Joseph Bortey</b> · <a href="tel:+233265768743" style="color:#fff;text-decoration:underline;white-space:nowrap">026 576 8743</a></div>
 <style>@media (max-width:760px){.jb-credit{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}}</style>
 <img src="https://hits.sh/josephbortey2003-droid.github.io/prettywomanevents-demo.svg" alt="" width="1" height="1" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none" referrerpolicy="no-referrer" loading="eager">
 </body>
